@@ -81,12 +81,48 @@ void Graph::BFS(int s){
              if(!visited[*i]){
                  cout << "visited and queued "<<*i<<endl;
                  visited[*i] = true;
+
+                 //push back to check this vertex
+                 queue.push_back(*i);
              }
          }
-
     }
-    
+}
 
+int main(){
+    //Create some edges to the vertices 
+    Graph g(6);
+
+    //Creates some edges to the vertices 
+    g.addEdge(0,1);
+    g.addEdge(0,2);
+
+    //connections for vertex 1
+    g.addEdge(1,0);
+    g.addEdge(1,3);
+    g.addEdge(1,4);
+    
+    //connections  for vertex 2
+    g.addEdge(2,0);
+    g.addEdge(2,4);
+
+    //connections for vertex 3
+    g.addEdge(3,1);
+    g.addEdge(3,4);
+    g.addEdge(3,5);
+
+    //connections for vertex 4
+    g.addEdge(4,1);
+    g.addEdge(4,2);
+    g.addEdge(4,3);
+    g.addEdge(4,5);
+
+    //connections for vertex 5
+    g.addEdge(5,3);
+    g.addEdge(5,4);
+
+    //perform BFS and print result
+    g.BFS(2);
 }
 
 
