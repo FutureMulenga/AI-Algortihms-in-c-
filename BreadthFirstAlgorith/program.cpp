@@ -2,6 +2,7 @@
   SIN: 20148647
   ASSIGNMENT: BREADTH FIRST SEARCH ALGORITHM
   COURSE: CS 471
+  GITHUB: https://github.com/FutureMulenga/AI-Algortihms-in-c-/blob/main/BreadthFirstAlgorith/program.cpp
 */
 
 #include <iostream>
