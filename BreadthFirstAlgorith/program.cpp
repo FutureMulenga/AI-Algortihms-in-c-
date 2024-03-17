@@ -43,7 +43,7 @@ Graph::Graph(int v) {
 }
 
 void Graph::addEdge(int v, int w){
-    //Adds the element at the end of the list
+    //Add an  element at the end of the list
     adj[v].push_back(w); 
 }
 
