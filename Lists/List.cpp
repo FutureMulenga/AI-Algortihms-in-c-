@@ -18,7 +18,7 @@ int main(){
 // Adding elements to the list  using push_back() method and push_front()  method
    names.push_back("FUTURE");
    names.push_front("MULENGA");
-   names.push_back("CHANDA");
+   names.push_back("RIPPER");
 
    //declare the iterator 
    list<string>:: iterator  itr;
