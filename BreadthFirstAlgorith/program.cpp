@@ -43,7 +43,7 @@ Graph::Graph(int v) {
 }
 
 void Graph::addEdge(int v, int w){
-    //Add an  element at the end of the list
+    //Add an element at the end of the list
     adj[v].push_back(w); 
 }
 
@@ -122,7 +122,7 @@ int main(){
     g.addEdge(5,4);
 
     //perform BFS and print result
-    g.BFS(2);
+    g.BFS(3);
 }
 
 
