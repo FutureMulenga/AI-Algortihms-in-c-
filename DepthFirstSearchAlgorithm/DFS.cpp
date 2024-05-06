@@ -1,6 +1,6 @@
 /*NAME: FUTURE MULENGA
   SIN: 20148647
-  ASSIGNMENT: BREADTH FIRST SEARCH ALGORITHM
+  ASSIGNMENT: DEPTH FIRST SEARCH ALGORITHM
   COURSE: CS 471
   GITHUB: https://github.com/FutureMulenga/AI-Algortihms-in-c-/blob/main/BreadthFirstAlgorith/program.cpp
 */
@@ -48,21 +48,38 @@ public:
 };
 
 int main() {
+
     Graph g;
     // Adding edges according to the graph described
-    g.addEdge('K', 'C'); g.addEdge('K', 'S'); g.addEdge('K', 'B'); g.addEdge('K', 'M'); g.addEdge('K', 'H');
-    g.addEdge('C', 'G'); g.addEdge('C', 'T'); g.addEdge('C', 'N'); g.addEdge('C', 'W');
-    g.addEdge('S', 'P'); g.addEdge('S', 'L'); g.addEdge('S', 'Z'); g.addEdge('S', 'U'); g.addEdge('S', 'D');
-    g.addEdge('B', 'A'); g.addEdge('B', 'O'); g.addEdge('B', 'E'); g.addEdge('B', 'J');
-    g.addEdge('M', 'F'); g.addEdge('M', 'X');
-    g.addEdge('H', 'Q'); g.addEdge('H', 'Y');
+    g.addEdge('K', 'C');
+    g.addEdge('K', 'S'); 
+    g.addEdge('K', 'B'); 
+    g.addEdge('K', 'M'); 
+    g.addEdge('K', 'H');
+    g.addEdge('C', 'G'); 
+    g.addEdge('C', 'T');
+    g.addEdge('C', 'N'); 
+    g.addEdge('C', 'W');
+    g.addEdge('S', 'P'); 
+    g.addEdge('S', 'L'); 
+    g.addEdge('S', 'Z'); 
+    g.addEdge('S', 'U'); 
+    g.addEdge('S', 'D');
+    g.addEdge('B', 'A'); 
+    g.addEdge('B', 'O'); 
+    g.addEdge('B', 'E'); 
+    g.addEdge('B', 'J');
+    g.addEdge('M', 'F'); 
+    g.addEdge('M', 'X');
+    g.addEdge('H', 'Q'); 
+    g.addEdge('H', 'Y');
     g.addEdge('N', 'W');
     g.addEdge('U', 'D');
     g.addEdge('E', 'J');
     g.addEdge('F', 'X');
 
     cout << "Starting DFS from node K:\n";
-    g.DFS('K');
+    g.DFS('P');
 
     return 0;
 }
